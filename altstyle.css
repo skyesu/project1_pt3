@@ -22,7 +22,7 @@ body {
 
 h1 {
     font-family: "kaeru kaeru";
-    font-style: none;
+    font-weight: normal;
     color: red;
     text-shadow: 2px 2px brown;
     font-size: 36pt;
@@ -37,6 +37,10 @@ img {
     margin: auto;
     display: block;
     max-width: 1000px;
+}
+
+a {
+    color: firebrick;
 }
 
 ul { 
@@ -148,6 +152,7 @@ blockquote {
     border: 0.5px solid rebeccapurple;
     box-shadow: 10px 15px rgb(31, 0, 72);
     color: slateblue;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .edit-window .window-doc {
@@ -180,3 +185,136 @@ blockquote {
 mark {
     background-color: rgba(255, 255, 0, 0.5);
 }
+
+.wrap {
+  display: flex;
+  height: 3em;
+  padding: 0;
+}
+
+.wrap>* {
+  flex: 1;
+}
+
+.imagebox {
+  position: relative;
+}
+
+.wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textbox {
+  padding: 1em 0;
+}
+
+
+/*DONT MOVE ANY OF THIS. -HORIZONTAL- gallery*/
+/* Reset */
+
+/* :root {
+  --container-padding: 1em;
+  --container-width: 100%;
+}
+
+* ::before {
+    box-sizing: border-box;
+  }
+  
+* ::after {
+    box-sizing: border-box;
+  }
+
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+.page-container {
+  padding: var(--container-padding);
+  max-width: var(--container-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Gallery layout */
+/* :root {
+  --gallery-gap: 1em;
+  --gallery-item-height: 250px;
+}
+
+.img-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gallery-gap);
+}
+
+.img-gallery::after {
+    content: "";
+    flex-grow: 999;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+
+.img-gallery__item {
+  position: relative;
+  flex: auto;
+  overflow: hidden;
+  height: var(--gallery-item-height);
+}
+
+.img-gallery__item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*browser variants*/
+
+/* .gecko .img-gallery__item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.ie .img-gallery__item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.opera .img-gallery__item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.safari .img-gallery__item img {
+    object-fit: cover;
+    height: var(--gallery-item-height);
+}
+
+.chrome .img-gallery__item img {
+    object-fit: cover;
+    height: var(--gallery-item-height);
+}
+
+.img-gallery__item figure {
+    margin: 0;
+    height: 100%;
+  }
+  
+@media only screen and (max-width: 700px){
+  .safari .img-gallery__item img {
+	  width: 100%;
+  	height: 100%;
+  }
+  .chrome .img-gallery__item img {
+	  width: 100%;
+	  height: 100%;
+  }
+} */
